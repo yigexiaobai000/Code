@@ -152,3 +152,12 @@ public class lianxi004 {
         System.out.println(isPainter);
     }
 }
+
+
+
+
+
+
+
+
+
