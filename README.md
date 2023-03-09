@@ -334,7 +334,316 @@ public static void main(String[]args){
     System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
     System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
    }
+}
+
+public class Lianxi008 {
+public static void main(String[]args){
+   int roujiamo = 1;
+   Boolean roujiamoReHuDe = true;
+   if (roujiamoReHuDe){
+      roujiamo = roujiamo+2;
+      System.out.println("肉夹馍是刚出炉的，买了" +roujiamo+ "个");
+   }else {
+      System.out.println("肉夹馍是热的，买了" +roujiamo+ "个");
+     }
+   }
 } 
+
+public class Lianxi009 {
+    public static void main(String[] args) {
+        int a = 89;
+        int b = 2;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + ",商是" +(a / b));
+        }
+        a++;
+
+    }
+}
+
+public class Lianxi010 {
+    public static void main(String[] agrs) {
+        int a = 11;
+        int b = 11;
+        int c = 12;
+        if (a == b && b == c) {
+            System.out.println("a,b,c等大,值为" + a);
+        } else if (a > b && a > c) {
+            System.out.println("a的值最大，值为" + a);
+        } else if (b > a && b > c) {
+            System.out.println("b的值最大，值为" + b);
+        } else if (c > a && c > b) {
+            System.out.println("c的值最大，值为" + c);
+        } else if (a == b && b > c) {
+            System.out.println("a,b等大且值为" + a);
+        } else if (a == c && a > b) {
+            System.out.println("a,c等大且值为" + a);
+        } else if (b == c && c > a) {
+            System.out.println("b,c等大且值为" + b);
+        }
+    }
+}
+
+public class Lianxi011 {
+    public static void main(String[] args) {
+        char ch = 'A';
+        int startNum = ch;
+        for (int a = 0; a < 26; a++) {
+            System.out.println((startNum + a) + "\t" + (char) (startNum + a));
+        }
+    }
+}
+
+public class Lianxi012 {
+    public static void main(String[] args) {
+        int divided = 100;
+        int divisor = 3;
+        for (int i = 0; i < 100 ; i++) {
+            if (divided % divisor == 0) {
+                System.out.println(divided + "可以整除" + divisor + "，的商是" + (divided / divisor));
+                }
+            divided++;
+        }
+    }
+}
+
+public class Lianxi013 {
+    public static void main(String[] args) {
+        int divided = 100;
+        int divisor = 3;
+        int found = 0;
+        for (int i = 0; i < 100 && found<10; i++) {
+            if (divided % divisor == 0) {
+                System.out.println(divided + "可以整除" + divisor + "，的商是" + (divided / divisor));
+                found++;
+            }
+            divided++;
+        }
+    }
+}
+
+public class Lianxi014 {
+    public static void main(String[] args) {
+        int divided = 100;
+        int divisor = 3;
+        int found = 0;
+        int toBefound = 10;
+        for (int i = 0; i < 100 ; i++) {
+            if (divided % divisor == 0) {
+                System.out.println(divided + "可以整除" + divisor + "，的商是" + (divided / divisor));
+                found++;
+            }
+            if (found >= toBefound){
+                System.out.println("程序已经找到"+toBefound+"个数，程序退出");
+              break;
+            }
+            divided++;
+        }
+    }
+}
+
+public class Lianxi015 {
+    public static void main(String[] args) {
+        int divided = 1;
+        int divisor = 7;
+        int found = 0;
+        int toBefound = 10;
+        for (int i = 0; i < 100 ; i++) {
+            if (divided<divisor ){
+                System.out.println(divided+"小于"+divisor+"程序跳出");
+                divided++;
+            }
+            if (divided % divisor == 0) {
+                System.out.println(divided + "可以整除" + divisor + "，的商是" + (divided / divisor));
+                found++;
+            }
+            if (found >= toBefound){
+                System.out.println("程序已经找到"+toBefound+"个数，程序退出");break;
+            }
+            divided++;
+        }
+    }
+}
+
+
+public class Lianxi016 {
+    public static void main(String[] args) {
+        int outer = 100;
+        {
+            int inner = 10;
+            System.out.println("outer的变量值是"+outer+"\t"+"inner的变量值是"+inner);
+        }int a1 = 1;
+        {
+            int a2 =a1+1;
+            {
+                int a3 = a2+1;
+                System.out.println("a3的值为"+a3);
+            }
+            {
+                int a3 = a2+10;
+                System.out.println("a3的值为"+a3);
+            }
+            System.out.println("a2的值为"+a2);
+        }
+    }
+}
+
+
+public class Lianxi017 {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 9; i++) {
+            String line = "";
+            for (int j = 1; j <= 9; j++) {
+                if (j > i) {
+                    break;
+                }
+                line += i + "*" + j +"="+ i * j + "\t";
+            }
+            System.out.println(line);
+        }
+    }
+}
+
+
+public class Lianxi018 {
+    public static void main(String[]agrs){
+        int n =12;//找出12个符合的结果
+
+        int dividend=100;
+        int divisor=89;
+        int found= 0;//第一次没找到
+        while (found<n){
+            if (dividend%divisor==0){
+                found++;
+                System.out.println(dividend+"可以整除"+divisor+"的，商为:"+(dividend/divisor));
+            }
+            dividend++;
+        }
+    }
+}
+
+public class Lianxi019 {
+    public static void main(String[] agrs) {
+        do {
+            System.out.println("do-while会执行一次");
+        } while (false);
+        for (int i = 0; i > 4; i++) {
+            System.out.println("for一次都不会执行");
+        }
+    }
+}
+
+
+public class Lianxi020 {
+    public static void main(String[]agrs){
+        int n =10;
+
+        int dividend=125;
+        int divisor=36;
+        int found= 0;
+        while (found<n){
+            if (dividend%divisor==0){
+                   //found++;
+                System.out.println(dividend+"可以整除"+divisor+"的，商为:"+(dividend/divisor));
+            }
+            dividend++;
+        }
+    }
+}
+
+
+public class Lianxi021 {
+    public static void main(String[]agrs){
+        int n =5;
+
+        int dividend=100;
+        int divisor=2000000000;
+        int found= 0;
+        while (found<n){
+            if (dividend%divisor==0){
+                System.out.println(dividend+"可以整除"+divisor+"的，商为:"+(dividend/divisor));
+            }
+            dividend++;
+        }
+    }
+}
+
+
+public class Lianxi022 {
+    public static void main(String[] agrs) {
+        int n = 10;
+
+        int dividend = 100;
+        int divisor = 89;
+        int found = 0;
+        String start = "从" + dividend + "开始";
+        while (found < n) {
+            if (dividend < 0) {
+                System.out.println("被除数溢出，计算结束。");
+                break;
+            }
+            if (dividend % divisor == 0) {
+                found++;
+                System.out.println(dividend + "可以整除" + divisor + "的，商为:" + (dividend / divisor));
+            }
+            dividend++;
+        }
+        System.out.println(start + "共找到" + found + "个可以整除" + divisor + "的数。");
+        System.out.println(dividend);
+    }
+}
 
 
 
