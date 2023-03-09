@@ -154,6 +154,188 @@ public class lianxi004 {
 }
 
 
+public class Lianxi005 {
+    public static void main(String[] args) {
+        String content = "a\tb\tcc\n\tee\t";
+        String align = "1111222233334444";
+        System.out.println(content);
+        System.out.println(align);
+
+        int a = 65;
+        char cha = (char) a;
+        char zhu = '\u6731';
+        char peng = '\u9e4f';
+        char  kai = '\u51ef';
+        System.out.println(cha);
+        System.out.println(zhu);
+        System.out.println(peng);
+        System.out.println(kai);
+
+       int a = 10;
+       int b = 20;
+       int c = a + b;
+       System.out.println("a + b=" + c);
+       boolean aBiggerThanB = a > b;
+       System.out.println("a > b 是"+ aBiggerThanB + "的");
+       System.out.println("a + b =" + a + b);
+       System.out.println("a + b ="+ (a+b));
+       System.out.println("a * b =" + a * b);
+
+       int a = 10;
+       String str = "a的值是";
+       System.out.println(str);
+       String s2 = "a的值是";
+       System.out.println(s2+a);
+       System.out.println(s2);
+       
+       int a = 10;
+       System.out.println("a++=" + a++);
+       System.out.println("a++=" + a);
+       System.out.println("++a=" + ++a);
+       System.out.println("++a=" + a);
+    }
+}
+
+public class Lianxi006 {
+    public static void main(String[] args) {
+      char ch = 'A';
+      int num = ch;
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+        System.out.println(num+"\t"+((char)(num++)));
+    }
+}
+
+public class Lianxi007 {
+public static void main(String[]args){
+    int div = 77;
+    int divsor = 9;
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+    System.out.println(div+"可以整除"+divsor+"吗？"+(div++%divsor == 0));
+   }
+} 
+
 
 
 
