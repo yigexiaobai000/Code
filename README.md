@@ -163,9 +163,9 @@ public class Lianxi005 {
 
         int a = 65;
         char cha = (char) a;
-        char zhu = '\u6731';
-        char peng = '\u9e4f';
-        char  kai = '\u51ef';
+        char zhu = '\u6731';//朱
+        char peng = '\u9e4f';//鹏
+        char  kai = '\u51ef';//凯
         System.out.println(cha);
         System.out.println(zhu);
         System.out.println(peng);
