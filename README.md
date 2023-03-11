@@ -645,6 +645,266 @@ public class Lianxi022 {
     }
 }
 
+public class Lianxi023 {
+    public static void main(String[] args) {
+        int n = 5;
+        String str = n + "对应的中文数字是：";
+        if (n == 1) {
+            str += "壹";
+        } else if (n == 2) {
+            str += "贰";
+        } else if (n == 3) {
+            str += "叁";
+        } else if (n == 4) {
+            str += "肆";
+        } else if (n == 5) {
+            str += "伍";
+        } else if (n == 6) {
+            str += "陆";
+        } else if (n == 7) {
+            str += "柒";
+        } else if (n == 8) {
+            str += "捌";
+        } else if (n == 9) {
+            str += "玖";
+        } else {
+            System.out.println("数字应该是1到9之间的数，否则无效");
+        }
+        System.out.println(str);
+    }
+}
+
+public class Lianxi024 {
+    public static void main(String[] args) {
+        int n = 5;
+        String srt = n + "对应的中文数字是：";
+        switch (n) {
+            case 1:
+                srt += "壹";
+                break;
+            case 2:
+                srt += "贰";
+                break;
+            case 3:
+                srt += "叁";
+                break;
+            case 4:
+                srt += "肆";
+                break;
+            case 5:
+                srt += "伍";
+                break;
+            case 6:
+                srt += "陆";
+                break;
+            case 7:
+                srt += "柒";
+                break;
+            case 8:
+                srt += "捌";
+                break;
+            case 9:
+                srt += "玖";
+                break;
+            default:
+                System.out.println("错误的值" + n + ".值需要大于等于1，小于等于9。");
+        }
+        System.out.println(srt);
+    }
+}
+
+public class Lianxi025 {
+    public static void main(String[] args) {
+        double randNum = 0;
+        //要生成一大于0.5的随机数，只有随机数大于0.5，程序循环才会退出
+        while (randNum < 0.5) {
+            //使用java中的M安太后。random（），生成一个随机数
+            randNum = Math.random();
+            System.out.println(randNum);
+        }
+        System.out.println("生成的大于0.5的随机数是" + randNum);
+        int rangeStart = 30;
+        int rangeEed = 90;
+        int mod = rangeEed - rangeStart;
+        for (int i = 0; i < 50; i++) {
+            int bigRandom = (int) (Math.random() * rangeEed * 100);
+            int numberToGuess = (bigRandom % mod) + rangeStart;
+            System.out.println("mod" + mod + ",numberToGuess=" + numberToGuess);
+        }
+    }
+}
+
+public class Lianxi025 {
+    public static void main(String[] args) {
+        double randNum = 0;
+        //要生成一大于0.5的随机数，只有随机数大于0.5，程序循环才会退出
+        while (randNum < 0.5) {
+            //使用java中的M安太后。random（），生成一个随机数
+            randNum = Math.random();
+            System.out.println(randNum);
+        }
+        System.out.println("生成的大于0.5的随机数是" + randNum);
+        int rangeStart = 30;
+        int rangeEed = 90;
+        int mod = rangeEed - rangeStart;
+        if(rangeStart<0 || rangeEed<0){
+            System.out.println("开始和结束必须是正数或者0");
+        }
+        if (mod<=1){
+            System.out.println("非法的数字范围：（"+rangeStart+","+rangeEed+")");
+        }
+        for (int i = 0; i < 50; i++) {
+            int bigRandom = (int) (Math.random() * rangeEed * 100);
+            int numberToGuess = (bigRandom % mod) + rangeStart;
+            if (numberToGuess<=rangeStart){
+                numberToGuess=rangeStart+1;
+            } else if (numberToGuess>rangeEed) {
+                numberToGuess = rangeEed-1;
+            }
+            System.out.println("mod" + mod + ",numberToGuess=" + numberToGuess);
+        }
+    }
+}
+
+
+public class Lianxi026 {
+   public static void main(String[]args){
+       Scanner in =new Scanner(System.in);
+       System.out.println("请问你的名字是？");
+       String str = in.nextLine();
+       System.out.println(str+",你好。");
+       System.out.println("请问你几岁了?");
+       int age= in.nextInt();
+       System.out.println("好的，"+str+age+"岁了。");
+   }
+}
+
+
+import java.util.Scanner;
+
+public class Lianxi027 {
+    public static void main(String[] args) {
+        //创建Scanner来读取用户键盘输入
+        Scanner in = new Scanner(System.in);
+        //游戏的设置
+        int rangeStart = 30;
+        int rangeEnd = 50;
+        int guessTotal = 5;
+        //游戏统计
+        int totalGameCount = 0;
+        int correctGuessCoun = 0;
+        //是否结束游戏
+        boolean gameEnd = false;
+        while (!gameEnd) {
+
+            //生成指定范围内的随机数
+            int mod = rangeEnd - rangeStart;
+            if (rangeStart < 0 || rangeEnd < 0) {
+                System.out.println("开始和结束必须是正数或者0");
+            }
+            if (mod <= 1) {
+                System.out.println("非法的数字范围:(" + rangeStart + "," + rangeEnd + ")");
+            }
+            int bigRandom = (int) (Math.random() * rangeEnd * 100);
+            int numberToGuess = (bigRandom % mod) + rangeStart;
+            if (numberToGuess <= rangeStart) {
+                numberToGuess = rangeStart + 1;
+            } else if (numberToGuess > rangeEnd) {
+                numberToGuess = rangeEnd - 1;
+            }
+            //剩余的猜测次数
+            int leftToGuess = guessTotal;
+            boolean currentGameCounted = false;
+            boolean correctGuess = false;
+
+            System.out.println("请输入猜测的数字，范围在（" + rangeStart + "," + rangeEnd + ").输入-1代表结束游戏：");
+            while (leftToGuess > 0) {
+                System.out.println("剩余猜测次数" + leftToGuess + ".请输入本次猜测的数字：");
+                int guess = in.nextInt();
+                if (guess < 0) {
+                    gameEnd = true;
+                    System.out.println("用户选择结束游戏。");
+                    break;
+                }
+                if (!currentGameCounted) {
+                    totalGameCount++;
+                    currentGameCounted = true;
+                }
+                leftToGuess--;
+                if (guess > numberToGuess) {
+                    System.out.println("输入的数字比目标数字大");
+                } else if (guess < numberToGuess) {
+                    System.out.println("输入的数字比目标数字小");
+                } else {
+                    correctGuessCoun++;
+                    correctGuess = true;
+                    System.out.println("输入的数字正确！");
+                    break;
+                }
+            }
+            if (!correctGuess){
+                System.out.println("本次的目标数字是："+numberToGuess);
+            }
+            System.out.println("共进行了" + totalGameCount + "次游戏，其中猜中的次数为" + correctGuessCoun);
+        }
+    }
+}
+
+public class Lianxi028 {
+    public static void main(String[] args) {
+        //每门成绩对应的索引
+        int YuWen = 0;
+        int ShuXue = 1;
+        int WaiYu = 2;
+        int WuLi = 3;
+        int HuaXue = 4;
+        int ShengWu = 5;
+
+        int totalScoreCount = 6;
+        double[] scores = new double[totalScoreCount];
+
+        String[] scoreNames = new String[totalScoreCount];
+        scoreNames[YuWen] = "语文";
+        scoreNames[ShuXue] = "数学";
+        scoreNames[WaiYu] = "外语";
+        scoreNames[WuLi] = "物理";
+        scoreNames[HuaXue] = "化学";
+        scoreNames[ShengWu] = "生物";
+
+        for (int i = 0; i < totalScoreCount; i++) {
+            scores[i] = 80 + Math.random() * 20;
+            System.out.println(scoreNames[i] + "的成绩是：" + scores[i]);
+        }
+        double maxScore = 0;
+        int maxScoreIndxe = -1;
+
+        for (int i = 0; i < totalScoreCount; i++) {
+            if (scores[i] > maxScore) {
+                maxScore = scores[i];
+                maxScoreIndxe = i;
+
+            }
+        }
+System.out.println("最好的成绩是"+scoreNames[maxScoreIndxe]+":"+maxScore);
+    }
+}
+
+
+public class Lianxi029 {
+ public static void main(String[]args){
+     Scanner in =new Scanner(System.in);
+
+     int a;
+     System.out.println("创建了变量a，输入一个整数：");
+     a=in.nextInt();
+     System.out.println("给a赋值，a的值为"+a+",请再次输入一个整数；");
+
+     a=in.nextInt();
+     System.out.println("再次给赋值，现在a的值为"+a);
+ }
+}
+
+
 
 
 
