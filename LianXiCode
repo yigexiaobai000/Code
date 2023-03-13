@@ -214,7 +214,7 @@ public class LianXi007 {
         a++;
     }
 }
-public class LianXi001 {
+public class LianXi008 {
     public static void main(String[] args) {
         int a = 13;
         int b = 4;
@@ -386,4 +386,10 @@ public class LianXi001 {
 
     }
 }
-
+public class LianXi009 {
+    public static void main(String[] args) {
+       for (int i = 0;i<=100;i++){
+           System.out.println("i的值为"+i);
+       }
+    }
+}
