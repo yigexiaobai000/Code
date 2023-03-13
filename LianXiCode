@@ -10,5 +10,380 @@ public class LianXi001 {
         System.out.println("d/a="+d/a);
     }
 }
+public class LianXi001 {
+    public static void main(String[] args) {
+       System.out.println("5+6="+(5+6));
+       System.out.println("5-6="+(5-6));
+       System.out.println("5*6="+5*6);
+       System.out.println("5/6="+5/6);
+        System.out.println("5/6.0="+5/6.0);
+        double a = 1+2-3*4/5.0;
+        System.out.println(a);
+    }
+}
+public class LianXi002 {
+    public static void main(String[] args) {
+        int a = 15;
+        System.out.println(a % 1);
+        System.out.println(a % -2);
+        System.out.println(a % 3);
+        System.out.println(a % -4);
+        System.out.println(a % 5);
+        int b = -15;
+        System.out.println(b % 1);
+        System.out.println(b % -2);
+        System.out.println(b % 3);
+        System.out.println(b % -4);
+        System.out.println(b % 5);
+    }
+}
+public class LianXi003 {
+    public static void main(String[] args) {
+        int a =0x400;
+        System.out.println(a);
+        System.out.println(a>>1);
+        System.out.println(a>>2);
+        System.out.println(a<<1);
+        System.out.println(a<<2);
+        int b =-0x400;
+        System.out.println(b);
+        System.out.println(b>>1);
+        System.out.println(b>>2);
+        System.out.println(b<<1);
+        System.out.println(b<<2);
+        System.out.println(b>>>1);
+        System.out.println(b>>>2);
+    }
+}
+public class LianXi004 {
+    public static void main(String[] args) {
+        int base = 1;
+        //0001
+        int is_student_mask = base;
+        //0010
+        int is_progarmmer_mask = base << 1;
+        //0100
+        int is_driver_mask = base << 2;
+        //1000
+        int is_printer_mask = base << 3;
+        //0101
+        int  data = 9;
+        //0101 & 0001 = 0001
+        boolean isStudent = (data & is_student_mask ) != 0;
+        System.out.println(isStudent);
+        //0101 & 0010 = 0000
+        boolean isProgarmmer = (data & is_progarmmer_mask) != 0;
+        System.out.println(isProgarmmer);
+        //0101 & 0100 = 0100
+        boolean isDriver = (data & is_driver_mask) != 0;
+        System.out.println(isDriver);
+        //0101 & 1000 = 0000
+        boolean isprinter = (data & is_printer_mask) != 0;
+        System.out.println(isprinter);
 
+    }
+}
+public class LianXi005 {
+    public static void main(String[] args) {
+        char ch = 'A';
+        int num = ch;
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+        System.out.println(num + "\t" + ((char) num++));
+
+    }
+}
+public class LianXi006 {
+    public static void main(String[] args) {
+        int baozi = 2;
+        boolean baoziGangChuLu = true;
+        if (baoziGangChuLu) {
+            baozi = baozi + 5;
+            System.out.println("包子刚出炉，买了"+baozi+"个");
+        }else {
+            System.out.println("包子没有刚出炉,所以买了"+baozi+"个");
+        }
+    }
+}
+public class LianXi007 {
+    public static void main(String[] args) {
+        int a = 15;
+        int b = 4;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+        if (a % b == 0) {
+            System.out.println(a + "可以整除" + b + "商为" + (a / b));
+        }
+        a++;
+    }
+}
+public class LianXi001 {
+    public static void main(String[] args) {
+        int a = 13;
+        int b = 4;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+        if (a % b == 0) {
+            System.out.println(a+"可以整除"+b+"的商是"+a/b);
+        }a++;
+
+    }
+}
 
