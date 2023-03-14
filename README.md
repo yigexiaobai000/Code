@@ -766,7 +766,7 @@ public class Lianxi025 {
     }
 }
 
-
+import java.util.Scanner;
 public class Lianxi026 {
    public static void main(String[]args){
        Scanner in =new Scanner(System.in);
