@@ -739,7 +739,7 @@ public class Lianxi025 {
         double randNum = 0;
         //要生成一大于0.5的随机数，只有随机数大于0.5，程序循环才会退出
         while (randNum < 0.5) {
-            //使用java中的Mrandom（），生成一个随机数
+            //使用java中的Math.random（），生成一个随机数
             randNum = Math.random();
             System.out.println(randNum);
         }
